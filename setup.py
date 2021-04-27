@@ -32,9 +32,9 @@ setup(name="pipelinewise-singer-python",
               'nose'
           ]
       },
-      packages=['singer'],
+      packages=['pipelinewise_singer'],
       package_data={
-          'singer': [
+          'pipelinewise_singer': [
               'logging.conf'
           ]
       },
