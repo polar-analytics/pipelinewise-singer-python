@@ -10,7 +10,7 @@ import dateutil.parser
 import pytz
 import backoff as backoff_module
 
-from singer.catalog import Catalog
+from pipelinewise_singer.catalog import Catalog
 
 DATETIME_PARSE = "%Y-%m-%dT%H:%M:%SZ"
 DATETIME_FMT = "%04Y-%m-%dT%H:%M:%S.%fZ"

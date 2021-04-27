@@ -1,5 +1,5 @@
-from singer import utils
-from singer.utils import (
+from pipelinewise_singer import utils
+from pipelinewise_singer.utils import (
     chunk,
     load_json,
     parse_args,
@@ -10,9 +10,9 @@ from singer.utils import (
     should_sync_field,
 )
 
-from singer.logger import get_logger
+from pipelinewise_singer.logger import get_logger
 
-from singer.metrics import (
+from pipelinewise_singer.metrics import (
     Counter,
     Timer,
     http_request_timer,
@@ -20,7 +20,7 @@ from singer.metrics import (
     record_counter,
 )
 
-from singer.messages import (
+from pipelinewise_singer.messages import (
     ActivateVersionMessage,
     Message,
     RecordMessage,
@@ -38,7 +38,7 @@ from singer.messages import (
     write_batch
 )
 
-from singer.transform import (
+from pipelinewise_singer.transform import (
     NO_INTEGER_DATETIME_PARSING,
     UNIX_SECONDS_INTEGER_DATETIME_PARSING,
     UNIX_MILLISECONDS_INTEGER_DATETIME_PARSING,
@@ -48,13 +48,13 @@ from singer.transform import (
     resolve_schema_references
 )
 
-from singer.catalog import (
+from pipelinewise_singer.catalog import (
     Catalog,
     CatalogEntry
 )
-from singer.schema import Schema
+from pipelinewise_singer.schema import Schema
 
-from singer.bookmarks import (
+from pipelinewise_singer.bookmarks import (
     write_bookmark,
     get_bookmark,
     clear_bookmark,

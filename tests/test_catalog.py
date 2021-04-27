@@ -1,7 +1,7 @@
 import unittest
 
-from singer.schema import Schema
-from singer.catalog import Catalog, CatalogEntry, write_catalog
+from pipelinewise_singer.schema import Schema
+from pipelinewise_singer.catalog import Catalog, CatalogEntry, write_catalog
 
 class TestWriteCatalog(unittest.TestCase):
     def test_write_empty_catalog(self):

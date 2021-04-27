@@ -1,5 +1,5 @@
 import unittest
-from singer import bookmarks
+from pipelinewise_singer import bookmarks
 
 class TestGetBookmark(unittest.TestCase):
     def test_empty_state(self):

@@ -1,6 +1,6 @@
 import unittest
-from singer import transform
-from singer.transform import *
+from pipelinewise_singer import transform
+from pipelinewise_singer.transform import *
 
 
 class TestTransform(unittest.TestCase):

@@ -1,6 +1,6 @@
 import unittest
-import singer.statediff as statediff
-from singer.statediff import Add, Remove, Change
+import pipelinewise_singer.statediff as statediff
+from pipelinewise_singer.statediff import Add, Remove, Change
 
 class TestPaths(unittest.TestCase):
 

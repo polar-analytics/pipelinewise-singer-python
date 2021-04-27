@@ -1,6 +1,6 @@
 import unittest
 
-from singer.schema import Schema
+from pipelinewise_singer.schema import Schema
 
 class TestSchema(unittest.TestCase):
 

@@ -44,7 +44,7 @@ import json
 import re
 import time
 from collections import namedtuple
-from singer.logger import get_logger
+from pipelinewise_singer.logger import get_logger
 
 DEFAULT_LOG_INTERVAL = 60
 

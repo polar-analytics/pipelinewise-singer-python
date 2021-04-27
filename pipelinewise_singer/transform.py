@@ -3,9 +3,9 @@ import logging
 import re
 from jsonschema import RefResolver
 
-import singer.metadata
-from singer.logger import get_logger
-from singer.utils import (strftime, strptime_to_utc)
+import pipelinewise_singer.metadata
+from pipelinewise_singer.logger import get_logger
+from pipelinewise_singer.utils import (strftime, strptime_to_utc)
 
 LOGGER = get_logger()
 
@@ -113,8 +113,8 @@ class Transformer:
     def filter_data_by_metadata(self, data, metadata):
         if isinstance(data, dict) and metadata:
             for field_name in list(data.keys()):
-                selected = singer.metadata.get(metadata, ('properties', field_name), 'selected')
-                inclusion = singer.metadata.get(metadata, ('properties', field_name), 'inclusion')
+                selected = pipelinewise_singer.metadata.get(metadata, ('properties', field_name), 'selected')
+                inclusion = pipelinewise_singer.metadata.get(metadata, ('properties', field_name), 'inclusion')
                 if inclusion == 'automatic':
                     continue
 
